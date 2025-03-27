@@ -30,7 +30,7 @@ function printPizza(pizzaPlace) {
   }
 }
 
-// printPizza(dominos);
+printPizza(dominos);
 
 function toppingsPriceRange(pizzaPlace) {
   const { pizzaToppings } = pizzaPlace;

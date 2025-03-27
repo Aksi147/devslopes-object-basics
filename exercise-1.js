@@ -21,10 +21,10 @@ favRest.cuisines.push("Rice");
 
 retrieveProperty = function (key) {
   if (favRest.hasOwnProperty(key) === true) {
-    console.log(favRest[key]);
+    return favRest[key];
   } else {
-    console.log("The information you requested does not exist.");
+    return "The information you requested does not exist.";
   }
 };
 
-retrieveProperty("state");
+console.log(retrieveProperty("name"));

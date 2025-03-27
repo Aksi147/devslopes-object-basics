@@ -28,18 +28,14 @@ const papaJohns = {
 
 // YOUR WORK GOES HERE //
 
-grabCategories = (arr) => {
-  console.log(Object.keys(arr));
+let grabCategories = (arr) => {
+  return Object.keys(arr);
 };
-grabCategories(papaJohns);
-grabCategories(papaJohns.pizzaToppings); //BONUS
+console.log(grabCategories(papaJohns));
+console.log(grabCategories(papaJohns.pizzaToppings)); //BONUS
 
-verifyValues = (arr, nov) => {
-  if (Object.keys(arr).length === nov && !(nov < Object.keys(arr).length)) {
-    return true;
-  } else {
-    return false;
-  }
+let verifyValues = (arr, nov) => {
+  return Object.keys(arr).length === nov;
 };
 
 console.log(verifyValues(papaJohns, 9));

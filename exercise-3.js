@@ -52,7 +52,7 @@ const calculateAverageRating = function (pizzaPlace) {
       0
     );
     let arrLength = Object.values(pizzaPlace.starReviews).length;
-    return sum / arrLength;
+    return (sum / arrLength).toFixed(2);
   }
 };
 
